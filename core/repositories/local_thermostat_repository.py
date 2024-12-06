@@ -18,3 +18,6 @@ class LocalThermostatRepository(ThermostatRepository):
             if thermostat.id == id:
                 return thermostat
         return None
+
+    def get_all(self) -> typing.List[Thermostat]:
+        return self.thermostats.copy()

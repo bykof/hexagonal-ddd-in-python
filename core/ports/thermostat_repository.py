@@ -12,3 +12,7 @@ class ThermostatRepository(ABC):
     @abstractmethod
     def get_by_id(self, id: str) -> Thermostat | None:
         pass
+
+    @abstractmethod
+    def get_all(self) -> typing.List[Thermostat]:
+        pass
